@@ -106,7 +106,7 @@ if($nilaim > 90) {
   $ketm   = "Tidak Lulus";
 }
 
-$rata_rata = ($nilaip + $nilaia + $nilaim);
+$rata_rata = ($nilai_p + $nilai_a +$nilai_m) / 3;
 ?>
 
 
@@ -144,6 +144,10 @@ $rata_rata = ($nilaip + $nilaia + $nilaim);
       <th scope="col"><?php echo $nilai_m?></th>
       <th scope="col"><?php echo $gradem?></th>
       <th scope="col"><?php echo $ketm?></th>
+    </tr>
+    <tr>
+      <td colspan="4">Nilai rata rata</td>
+      <td><?= $rata_rata; ?></td>
     </tr>
     <?php } ?>
   </tbody>
